@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Work+Sans:wght@500&display=swap');
 *{
     margin: 0;
     padding:0; 
     box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 body{
     margin:5% 20% 0;  
@@ -134,14 +138,25 @@ section{
 
 @media screen and (max-width:576px) {
     *{
-        margin-right:10px; 
+        margin:0;
+        padding:0;  
     }
-    .company{
-        flex-direction: column;
-        gap:30px; 
+    .body{
+        padding:5%; 
+        margin:5%; 
     }
     .banner{
         flex-direction: column-reverse;
+        text-align:center; 
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        display: none;
+    }
+    .company{
+        flex-wrap: wrap;
+        gap:5px; 
     }
     .nav{
         flex-direction: column;
